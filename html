@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="前野譲二">
+    <meta name="description" content="HTMLの基礎解説">
+    <title>HTMLの基礎 - 吾輩は猫である</title>
+    <style>
+        .highlight {
+            background-color: #ee1;
+        }
+    </style>
+</head>
+<body>
+    <!-- 見出しと段落 -->
+    <h1>吾輩は猫である</h1>
+    <p>吾輩は <span class="highlight">猫</span> である。名前はまだない。</p>
+    <hr>
+    
+    <!-- リスト -->
+    <h2>神社一覧</h2>
+    <ol>
+        <li>氷川神社</li>
+        <li>小野神社</li>
+    </ol>
+    <ul>
+        <li>寒川神社</li>
+        <li>川勾神社</li>
+    </ul>
+    
+    <!-- 引用 -->
+    <blockquote>
+        Four score and seven years ago our fathers brought forth, upon this continent, a new nation, conceived in liberty, and dedicated to the proposition that all men are created equal.
+    </blockquote>
+    
+    <!-- 画像 -->
+    <figure>
+        <img src="Altirhinus_01.JPG" alt="アルティリヌス">
+        <figcaption>Wikimediaのアルティリヌス</figcaption>
+    </figure>
+    
+    <!-- SVG 図形 -->
+    <h2>SVGによる図形</h2>
+    <svg version="1.1" baseProfile="full" width="300" height="300" xmlns="http://www.w3.org/2000/svg">
+        <rect width="100%" height="100%" fill="black" />
+        <circle cx="150" cy="100" r="90" fill="white" />
+    </svg>
+
+    <!-- アニメーション -->
+    <h2>SVGによるアニメーション</h2>
+    <svg viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg">
+        <rect width="10" height="10">
+            <animate attributeName="rx" values="0;5;0" dur="10s" repeatCount="indefinite" />
+        </rect>
+    </svg>
+
+    <!-- ハイパーリンク -->
+    <h2>リンク</h2>
+    <p><a href="https://www.google.co.jp">Google</a></p>
+    <p><a href="mailto:someone@example.co.jp">メール</a></p>
+    <p><a href="tel:09000123456">090-0012-3456</a></p>
+
+    <!-- 整形済みテキスト -->
+    <pre>
+#include <stdio.h>
+int main(int argc, char *argv[]) {
+    int i, n;
+    scanf("%d", &n);
+    for (i = 0; i <= n; i++) {
+        printf("%3d %6d\n", i, i * i);
+    }
+    return 0;
+}
+    </pre>
+</body>
+</html>
